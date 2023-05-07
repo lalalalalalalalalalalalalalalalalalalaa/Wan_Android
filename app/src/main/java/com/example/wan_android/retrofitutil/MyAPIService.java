@@ -1,9 +1,7 @@
 package com.example.wan_android.retrofitutil;
 
 import com.example.wan_android.banner.Banner_item;
-import com.example.wan_android.newitem.New_Item;
-import com.example.wan_android.newitem.News_cell;
-
+import com.example.wan_android.newitem.newsbean.New_Item;
 import java.util.List;
 
 import retrofit2.Call;
@@ -19,8 +17,7 @@ public interface MyAPIService {
     @GET(Api.bannerUrl)
     Call<List<Banner_item>> getBannerUrl();
 
-    @GET(Api.newsUrl + "/0/json")
-    Call<List<News_cell>> getnews();
+
 
 
 

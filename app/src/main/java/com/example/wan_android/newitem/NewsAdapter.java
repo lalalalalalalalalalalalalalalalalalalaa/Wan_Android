@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.wan_android.R;
 import com.example.wan_android.databinding.NewsFooterItemBinding;
 import com.example.wan_android.databinding.NewsItemBinding;
+import com.example.wan_android.newitem.newsbean.Items;
 
 public class NewsAdapter extends ListAdapter<Items, RecyclerView.ViewHolder> {
 

@@ -3,16 +3,15 @@ package com.example.wan_android.newitem;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModel;
 
 import com.example.wan_android.banner.Banner_item;
+import com.example.wan_android.newitem.newsbean.Items;
+import com.example.wan_android.newitem.newsbean.New_Item;
 import com.example.wan_android.retrofitutil.MyAPIService;
 import com.example.wan_android.retrofitutil.RetrofitUtil;
-import com.google.gson.Gson;
 
 import java.util.List;
 
@@ -68,7 +67,7 @@ public class NewsViewModel extends ViewModel {
                 Log.e("connectfail", "connectfail");
             }
         });
-        
+
     }
 
     public void getBannerData(){

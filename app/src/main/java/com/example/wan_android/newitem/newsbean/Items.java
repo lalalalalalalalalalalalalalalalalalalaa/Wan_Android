@@ -1,45 +1,6 @@
-package com.example.wan_android.newitem;
+package com.example.wan_android.newitem.newsbean;
 
-import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
-
-public class New_Item {
-    private Data data;
-    private int pageCount;
-    public Data getData() {
-        return data;
-    }
-
-    public void setData(Data data) {
-        this.data = data;
-    }
-
-    public int getPageCount() {
-        return pageCount;
-    }
-
-}
-
-class Data{
-    public Data(List<Items> datas, int curpage) {
-        this.datas = datas;
-        this.curpage = curpage;
-    }
-
-    public List<Items> getDatas() {
-        return datas;
-    }
-
-    public void setDatas(List<Items> datas) {
-        this.datas = datas;
-    }
-
-    private List<Items> datas;
-    private int curpage;
-}
-
-class Items {
+public class Items {
     private String chapterName;
     private String link;
     private String title;
@@ -94,7 +55,3 @@ class Items {
         this.niceDate = niceDate;
     }
 }
-
-
-
-
